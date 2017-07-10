@@ -1,0 +1,18 @@
+description: 'Exibe as rotas atuais de uma aplicação'
+arguments:
+    route-name: 'Nomes das rotas'
+messages:
+    name: 'Nome da rota'
+    class: 'Caminho da classe'
+    route: Rota
+    path: Caminho
+    defaults: Padrão
+    requirements: Requirements
+    options: Opções
+examples:
+    -
+        description: 'Displays current routes for the application'
+        execution: 'drupal rod'
+    -
+        description: 'Displays details for the route user.page (/user)'
+        execution: 'drupal rod user.page'

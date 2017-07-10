@@ -4,6 +4,11 @@ messages:
     site: Site
     host: Host
     root: 'Diretório raíz'
-    directory-not-found: 'Diretório do site local não encontrado'
+    not-sites: 'No sites defined'
+    invalid-site: 'Invalid site name'
     private-key: 'Erro com a chave privada'
     connect-error: 'Erro ao conectar o servidor remoto'
+    directory-not-found: 'Diretório do site local não encontrado'
+options:
+    target: Target
+    property: Property

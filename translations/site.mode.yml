@@ -1,6 +1,8 @@
 description: 'Atualizar as configurações de desempenho do sistema'
 arguments:
     environment: 'Nome do ambiente [dev, prod]'
+options:
+    local: 'Use this option for testing PROD config, but using settings.local.php for connect to your local environment'
 messages:
     configuration: 'Nome da configuração'
     configuration-key: 'Chave da configuração'

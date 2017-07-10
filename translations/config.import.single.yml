@@ -1,11 +1,23 @@
 description: 'Importar a configuratição selecionada.'
+options:
+    file: 'The file(s) name or file(s) absolute path to import'
+    directory: 'The path from where to import file(s).'
+questions:
+    file: 'Digite o caminho para o arquivo de importação.'
+    directory: 'Enter path from where to import files.'
+    name: 'Digite o nome de configuração.'
+messages:
+    missing-file: 'File option is missing.'
+    empty-value: 'Valor não pode ser vazio.'
+    success: 'A configuração "%s", foi importada.'
+examples:
+    -
+        description: 'Providing a file option using full path.'
+        execution: "drupal config:import:single \\\n  --file=\"/path/to/file/block.block.default_block.yml\""
+    -
+        description: 'Providing file and directory options'
+        execution: "drupal config:import:single  \\\n  --file=\"block.block.default_block.yml\" \\\n  --directory=\"/path/to/directory\"\n"
 arguments:
     name: 'Nome da configuração.'
     file: 'Caminho para o arquivo de importação'
     input-file: 'Caminho para os arquivos de importação.'
-questions:
-    name: 'Digite o nome de configuração.'
-    file: 'Digite o caminho para o arquivo de importação.'
-messages:
-    empty-value: 'Valor não pode ser vazio.'
-    success: 'A configuração "%s", foi importada.'

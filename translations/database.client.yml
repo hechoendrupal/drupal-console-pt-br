@@ -4,3 +4,7 @@ arguments:
 messages:
     connection: 'Connection: "%s"'
     executing: 'Executando: "%s"'
+examples:
+    -
+        description: 'Launch the default client or could launch another regarding the specification on the argument'
+        execution: "drupal database:client <database>\n"

@@ -8,7 +8,10 @@ questions:
 messages:
     invalid-rest-id: 'ID REST "%s" inválido'
     formats: 'Formatos de serialização disponíveis'
+    methods: 'Available methods'
     authentication-providers: 'Provedores de autenticação disponíveis'
-    selected-state: 'Estado selecionado'
+    selected-method: 'Selected Method'
     selected-formats: 'Formatos selecionados'
     selected-authentication-providers: 'Provedores de Autenticação selecionados'
+    success: 'Rest ID "%s" enabled'
+    selected-state: 'Estado selecionado'

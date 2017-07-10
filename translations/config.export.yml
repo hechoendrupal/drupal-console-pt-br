@@ -1,10 +1,22 @@
 description: 'Exportar a configuração atual da aplicação.'
-arguments:
-    directory: 'Escolha o diretório onde a configuração exportada será salva.'
+options:
+    directory: 'Define the export directory to save the configuration output.'
     tar: 'If set, the configuration will be exported to an archive file.'
+    remove-uuid: 'If set, the configuration will be exported without uuid key.'
+    remove-config-hash: 'If set, the configuration will be exported without the default site hash key.'
 messages:
     directory: 'A configuração exportada foi salva em "%s"'
     error: 'An error occurred while creating your directory at "%s"'
+examples:
+    -
+        description: 'Optional you can add the path to export'
+        execution: "drupal config:export  \\\n  --directory=\"path/to/export\""
+    -
+        description: 'If export will be in a compressed file and/or if uuid and config hashes will be removed.'
+        execution: "drupal config:export  \\\n  --directory=\"path/to/export\" \\\n  --tar \\\n  --remove-uuid \\\n  --remove-config-hash\n"
+arguments:
+    directory: 'Escolha o diretório onde a configuração exportada será salva.'
+    tar: 'If set, the configuration will be exported to an archive file.'
 content:
     type:
         description: 'Exportar um content-type específico e todos os seus fields.'

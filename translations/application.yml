@@ -33,14 +33,31 @@ messages:
         route: "Com a finalidade de criar páginas é necessário criar rotas para elas.\nUma rota relaciona uma URL a um controlador. Isso define qual função\nou método será chamado quando uma URL é acessada.\nSe o usuário acessar http://drupal8.dev/{{ route }}, o sistema buscará uma rota para esse caminho. Neste caso, se encontrar uma rota\n, e executará a chamada controller. Neste caso a chamada é \ndefinida como um nome de classe\n(\"\\Drupal\\{{ module }}\\Controller\\{{ class_name }}\")\ne um método (\"{{ method_name }}\")."
     autocomplete: "Bash or Zsh: Adiciona está linha para arquivo de configuração do shell:\n<info>source \"$HOME/.console/console.rc\" 2>/dev/null</info>\n\nFish: Criar um link simbólico\n<info>ln -s ~/.console/drupal.fish ~/.config/fish/completions/drupal.fish</info>\n"
     version: '<info>"%s"</info> version <comment>"%s"</comment>'
+    disable:
+        command:
+            error: 'Command: "%s" is deprecated.'
+            extra: 'You must execute: "%s" instead'
 errors:
     invalid-command: 'Comando "%s" não está definido.'
 site:
     messages:
         path: 'Endereço do site'
     errors:
-        directory: 'Para listar todos os comandos disponíveis, você deve estar em um diretório raiz do Drupal.'
         settings: 'Para listar todos os comandos disponíveis, você deve instalar um Drupal primeiro.'
+        directory: 'Para listar todos os comandos disponíveis, você deve estar em um diretório raiz do Drupal.'
+        not-installed: 'Drupal Console is not installed at: %s'
+        execute-composer: 'You must execute the following composer commands:'
+        missing-config-file: 'Missing configuration file, possible paths:'
+        missing-config-file-command: 'Execute "drupal init" command to generate one'
 user:
     messages:
         path: 'Endereço da home do usuário.'
+remote:
+    errors:
+        passphrase-missing: 'Passphrase file is missing'
+        passphrase-empty: 'Passphrase file is empty'
+        private-missing: 'Private file is missing'
+        private-empty: 'Private file is empty'
+        private-invalid: 'Private file is invalid'
+        invalid-root: 'Invalid root directory'
+        console-not-found: 'Drupal Console not found on this site'

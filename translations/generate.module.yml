@@ -13,6 +13,7 @@ options:
     composer: 'Adicionar um arquivo composer.json'
     dependencies: 'Dependências do módulo separados por vírgulas (i.e. context, panels)'
     test: 'Criar uma classe de teste'
+    twigtemplate: 'Generate theme template'
     controller: 'Controller padrão'
     structure: 'Gerar estrutura de diretório'
 questions:
@@ -28,6 +29,7 @@ questions:
     composer: 'Você quer adicionar um composer.json file para seu módulo'
     dependencies: 'Você gostaria de adicionar dependências de módulo'
     test: 'Você deseja criar uma classe de teste unitário'
+    twigtemplate: 'Do you want to generate a themeable template'
     controller: 'Você deseja criar um Controller padrão'
     structure: 'Você deseja criar a estrutura de diretório'
 warnings:

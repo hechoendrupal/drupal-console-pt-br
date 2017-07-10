@@ -1,4 +1,5 @@
 description: 'Permissões de acesso ao node reconstruídas. A reconstrução irá remover todos os privilégios do conteúdo e substituí-los com permissões baseadas nos módulos e configurações atuais.'
+help: 'Rebuilding will remove all privileges to content and replace them with permissions based on the current modules and settings.'
 options:
     batch: 'Processo em modo de lotes.'
 messages:

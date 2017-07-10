@@ -9,3 +9,10 @@ messages:
     event-deleted: 'Evento "%s" foi removido'
     clear-error: 'O processo de limpeza falhou, por favor revise os filtros utilizados'
     clear-sucess: 'Eventos removidos com sucesso'
+examples:
+    -
+        description: 'Clear the database log from DBLog table'
+        execution: "drupal database:log:clear \\\n  <database>"
+    -
+        description: 'Clear the database log from DBLog table using filters'
+        execution: "drupal database:log:clear \\\n  <database> \\\n  --type=TYPE \\\n  --severity=SEVERITY"

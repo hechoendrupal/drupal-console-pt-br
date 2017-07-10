@@ -6,4 +6,11 @@ questions:
     config-name: 'Escolha uma unidade de configuração'
 messages:
     no-directory: 'Ocorreu um erro durante a criação de seu diretório em'
+examples:
+    -
+        description: 'Edit system cron configurations with "vim" (default editor).'
+        execution: 'drupal config:edit system.cron'
+    -
+        description: 'Edit system cron configurations with "gedit".'
+        execution: 'drupal config:edit system.cron gedit'
 fdescription: 'Edite a configuração selecionada.'
