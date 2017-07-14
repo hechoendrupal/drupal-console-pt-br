@@ -4,3 +4,10 @@ arguments:
     key: 'Debug para a chave de Estado.'
 messages:
     key: 'Chave de Estado'
+examples:
+    -
+        description: 'List of the states on the site'
+        execution: "drupal debug:state\n"
+    -
+        description: 'Displays a detail of the state install_task tok from the list of states'
+        execution: "drupal debug:state install_task\n"

@@ -10,3 +10,7 @@ messages:
 errors:
     no-key: 'Você deve definir uma chave de Estado a ser sobrescrito.'
     no-value: 'Você deve definir um valor para o Estado.'
+examples:
+    -
+        description: 'Override state value specifying the state name and the new value'
+        execution: "drupal state:override  comment.node_comment_statistics_scale \"!!float 1\"\n"

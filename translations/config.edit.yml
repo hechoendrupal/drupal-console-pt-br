@@ -13,4 +13,3 @@ examples:
     -
         description: 'Edit system cron configurations with "gedit".'
         execution: 'drupal config:edit system.cron gedit'
-fdescription: 'Edite a configuração selecionada.'

@@ -17,3 +17,7 @@ messages:
     success-groups: 'Todos os grupos de teste foram enumerados com sucesso, usar o argumento do grupo para filtrar unidade de teste por grupo de teste ou seja $ drupal test:debug Url'
     success-group: 'Todas as unidades de teste para o grupo % foram listadas com sucesso'
     id: 'ID do teste unitário'
+examples:
+    -
+        description: ''
+        execution: "drupal debug:test\n"

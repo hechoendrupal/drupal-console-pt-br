@@ -25,7 +25,7 @@ questions:
     inputs:
         confirm: 'Você deseja de gerar uma estrutura de formulário?'
         label: 'Label do input'
-        machine_name: 'Nome de máquina do input'
+        machine-name: 'Input machine name'
         permission: 'Você quer gerar permissões?'
         type: Tipo
         invalid: 'Tipo de campo "%s" inválido.'
@@ -34,6 +34,7 @@ questions:
         weight: 'Peso para o elemento input'
         title: Título
         fieldset: Fieldset
+        machine_name: 'Nome de máquina do input'
 errors:
     module-dependency: 'Dependência do módulo ausente "%s"'
     class-name-empty: 'O nome da classe não pode ser vazio'
