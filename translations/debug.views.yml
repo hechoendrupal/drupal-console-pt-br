@@ -16,3 +16,7 @@ messages:
     display-name: 'Nome do display'
     display-description: 'Descrição do display'
     display-paths: 'Caminho do display'
+examples:
+    -
+        description: 'List of views on the site'
+        execution: "drupal debug:views\n"

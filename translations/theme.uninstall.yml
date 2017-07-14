@@ -18,3 +18,7 @@ messages:
     invalid-theme-default: 'Opção padrão só é válida para um único tema'
     error-default-theme: 'O tema "%s" não pode ser desinstalado pois é o tema padrão'
     error-admin-theme: 'O tema "%s" não pode ser desinstalado pois é o tema administrativo.'
+examples:
+    -
+        description: 'Uninstall theme specifying the name'
+        execution: "drupal theme:uninstall  mytheme\n"
