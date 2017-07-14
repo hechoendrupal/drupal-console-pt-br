@@ -6,6 +6,7 @@ questions:
     config-name: 'Escolha uma unidade de configuração'
 messages:
     no-directory: 'Ocorreu um erro durante a criação de seu diretório em'
+    choose-configuration: 'Choose a configuration'
 examples:
     -
         description: 'Edit system cron configurations with "vim" (default editor).'
