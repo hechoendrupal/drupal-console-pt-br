@@ -4,21 +4,21 @@ options:
     learning: 'Gerar código com explicações.'
     generate-chain: 'Imprimir opções e argumentos como YAML para ser usado o comando chain'
     generate-inline: 'Imprimir opções e argumentos de execução como chamada inline para ser usado no futuro'
-    generate-doc: 'Shows command options and arguments as markdown'
-    root: 'Define a rais do Drupal que utilizará os comandos em execução.'
+    generate-doc: 'Mostra opções de comando e argumentos como markdown'
+    root: 'Define a raíz do Drupal que utilizará os comandos em execução.'
     uri: 'URI do site Drupal para usar (para ambientes multisites ou quando usado em uma porta alternativa)'
-    'yes': 'Skip confirmation and proceed'
-    target: 'Site name you want to interact with (for local or remote sites)'
-    help: 'Display this help message'
-    quiet: 'Do not output any message'
-    verbose: 'Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug'
-    version: '<info>"%s"</info> versão <comment>"%s"</comment>'
-    ansi: 'Force ANSI output'
-    no-ansi: 'Disable ANSI output'
-    no-interaction: 'Do not ask any interactive question'
-    check-fix: 'Attempt to fix any missing configuration.'
+    yes: 'Pular confirmação e prosseguir'
+    target: 'Nome do site com o qual deseja interagir (para sites locais ou remotos)'
+    help: 'Exibir essa mensagem de ajuda'
+    quiet: 'Não mostrar nenhuma mensagem de saída'
+    verbose: 'Aumentar detalhamento das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depurar'
+    version: '<info>%s</info> versão <comment>%s</comment>'
+    ansi: 'Forçar saída ANSI'
+    no-ansi: 'Desabilitar saída ANSI'
+    no-interaction: 'Não faça nenhuma pergunta interativa'
+    check-fix: 'Tentar corrigir qualquer configuração faltante.'
 arguments:
-    command: 'The command to execute'
+    command: 'O comando a ser executado'
 messages:
     completed: 'O comando foi executado com sucesso!'
     chain:
@@ -47,32 +47,32 @@ site:
         settings: 'Para listar todos os comandos disponíveis, você deve instalar um Drupal primeiro.'
         directory: 'Para listar todos os comandos disponíveis, você deve estar em um diretório raiz do Drupal.'
         not-installed: 'Drupal Console is not installed at: %s'
-        execute-composer: 'You must execute the following composer commands:'
-        missing-config-file: 'Missing configuration file, possible paths:'
-        missing-config-file-command: 'Execute "drupal init" command to generate one'
+        execute-composer: 'Você deve executar os seguintes comandos composer:'
+        missing-config-file: 'Falta o arquivo de configuração, possíveis caminhos:'
+        missing-config-file-command: 'Execute o comando "drupal init" para gerar um'
 user:
     messages:
         path: 'Endereço da home do usuário.'
 remote:
     errors:
-        passphrase-missing: 'Passphrase file is missing'
-        passphrase-empty: 'Passphrase file is empty'
-        private-missing: 'Private file is missing'
-        private-empty: 'Private file is empty'
-        private-invalid: 'Private file is invalid'
-        invalid-root: 'Invalid root directory'
-        console-not-found: 'Drupal Console not found on this site'
+        passphrase-missing: 'O arquivo Passphrase está faltando'
+        passphrase-empty: 'O arquivo Passphrase está vazio'
+        private-missing: 'Arquivo privado está faltando'
+        private-empty: 'Arquivo privado está vazio'
+        private-invalid: 'Arqvuivo privado está inválido'
+        invalid-root: 'Diretório raíz inválido'
+        console-not-found: 'Drupal Console não encontrado neste site'
 gitbook:
     messages:
-        title: 'Available Drupal Console Commands'
+        title: 'Comandos Drupal Console Disponíveis'
         note: Note
-        note-description: 'Drupal Console commands *must* be run from the root of a Drupal 8 installation'
-        command: 'Drupal Console Command'
-        command_description: 'The **"%s"** command "%s"'
-        usage: Usage
-        options: 'Available options'
-        option: Option
-        details: Details
-        arguments: 'Available arguments'
-        argument: Argument
-        examples: Examples
+        note-description: 'Comandos Drupal Console *devem* ser excutados a partir da raíz de uma instalação Drupal 8'
+        command: 'Comando Drupal Console'
+        command_description: 'O **"%s"** comando "%s"'
+        usage: Utilização
+        options: 'Opções disponíveis'
+        option: Opção 
+        details: Detalhes
+        arguments: 'Argumentos disponíveis'
+        argument: Argumento
+        examples: Exemplos
