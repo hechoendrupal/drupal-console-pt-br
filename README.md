@@ -1,31 +1,32 @@
 # drupal-console-pt-br
 DrupalConsole Brazilian Portuguese Language / En Portugués de Brasil
 
-# Versão em Português Brasileiro
+# Versión en portugués de brasil
 
-## Uso
+## Usage
 
-O projeto Drupal Console é instalado para cada site Drupal 8 com idioma inglês por padrão.
+Drupal Console project it's installed per each Drupal 8 website with English language by default.
 
-Para instalar o pacote Drupal Console para o idioma PT_BR, execute as seguintes instruções:
+To install Drupal Console package for Hindi language run the following instructions
 
 ```
 $ composer require drupal/console-pt-br
 ```
 
-### Instalar Drupal Console
+### Install Drupal Console
 
-Para instalar a versão apropriada do projeto Drupal Console para sua instalação drupal, execute o seguinte comando do composer
+To install the appropriate version of Drupal Console project for your drupal installation, run the following composer command
 
 ```
 $ composer require drupal/console:~1.0 --prefer-dist --optimize-autoloader
 ```
 
-### Instale o launcher do Drupal Console
+### Install Drupal Console launcher
 
-Para evitar conflitos entre o lançamento do Drupal e ter uma versão do Drupal Console entre lançamentos importantes e menores no Drupal, um launcher do Drupal Console foi criado, para facilitar o carregamento dos comandos do Drupal Console disponíveis para cada site Drupal 8.
+In order to avoid conflicts between Drupal release and have a Drupal Console version between major and minor releases in Drupal,  a Drupal Console launcher was created. n order to facilitate to load the Drupal Console commands available to each
+Drupal 8 website,
  
-Seguindo as instruções abaixo, você pode instalar o aplicativo global para o launcher do Drupal Console.
+Following the instruction below you could install the global application for Drupal Console launcher. 
 
 ```
 $ curl https://drupalconsole.com/installer -L -o drupal.phar
@@ -36,27 +37,27 @@ $mv drupal.phar /usr/local/bin/drupal
 $ chmod +x /usr/local/bin/drupal
 ```
 
-### Contribuir
+### Contribute
 
-Se você quiser contribuir com esta tradução, você deve seguir estes passos
+If you want to contribute to this translation, you need to follow this steps
 
-- Fork este repositório seguindo este link [https://github.com/hechoendrupal/drupal-console-pt-br#fork-destination-box](https://github.com/hechoendrupal/drupal-console-pt-br#fork-destination-box)
-- Clone seu repositório 'forkado' em sua máquina local.
+- Fork this repository following this link [https://github.com/hechoendrupal/drupal-console-pt-br#fork-destination-box](https://github.com/hechoendrupal/drupal-console-pt-br#fork-destination-box)
+- Clone your repostory forked in your local machine.
 - Set up upstream
 
-Para ser atualizado com outra contribuição você deve configurar um repositório conectado com o principal usando o seguinte comando git: 
+In order to be updated with other contribution you must to setup a connected with main repository using the following git command
 
 ```
 $ git remote add upstream git@github.com:hechoendrupal/drupal-console-pt-br.git
 ```
 
-Para obter a última contribuição antes para começar, você deve executar os próximos comandos:
+To fetch the latest contribution before to start, you must run the next commands
 ```
 $ git fetch upstream
 $ git merge upstream/master
 ```
 
-N.B: Push suas alterações em seu repositório 'forkado' para criar um PR por dia para evitar conflitos com outros contribuidores.
+N.B: Push your changes to your forked repository in order to create PR per day to avoid any conflicts with other contributors.
 
 # English Version
 
