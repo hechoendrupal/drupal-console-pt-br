@@ -2,21 +2,21 @@ description: 'Execução de comandos em sequência'
 options:
     file: 'Arquivo definido pelo usuário contendo comandos para ser executados em sequência'
 questions:
-    chain-file: 'Select chain file to execute'
+    chain-file: 'Selecione o arquivo chain para executar'
 messages:
-    missing-file: 'You must provide a valid file path and name.'
-    invalid-file: 'The file "%s" does not exist.'
-    module-install: 'module:install command is not runnable inside a chain queue and must be run independently.'
-    missing-environment-placeholders: 'Missing environment placeholder(s) "%s"'
-    set-environment-placeholders: 'Set environment placeholders as:'
-    missing-inline-placeholders: 'Missing inline placeholder(s) "%s"'
-    set-inline-placeholders: 'Pass inline placeholders as:'
-    select-value-for-placeholder: 'Select value for %s placeholder'
-    enter-value-for-placeholder: 'Enter value for %s placeholder'
+    missing-file: 'Você deve fornecer um caminho e um nome de arquivo válidos.'
+    invalid-file: 'O arquivo "%s" não existe.'
+    module_install: 'comando module:install não é executável dentro de uma sequência de comandos e deve ser executado de forma independente.
+    missing-environment-placeholders: 'Faltando environment placeholder(s) "%s"'
+    set-environment-placeholders: 'Definir environment placeholders como:'
+    missing-inline-placeholders: 'Faltando inline placeholder(s) "%s"'
+    set-inline-placeholders: 'Coloque os inline placeholders como:'
+    select-value-for-placeholder: 'Selecione um valor para %s placeholder'
+    enter-value-for-placeholder: 'Digite o valor para %s placeholder'
     missing_file: 'Você deve fornecer um nome e caminho de arquivo válido.'
     invalid_file: 'O arquivo "%s" não existe.'
     module_install: 'comando module:install não é executável dentro de uma sequência de comandos e deve ser executado de forma independente.'
 examples:
     -
-        description: 'Providing a file option using full path.'
+        description: 'Fornecendo uma opção de arquivo usando o caminho completo.'
         execution: "drupal chain \\\n  --file=\"/path/to/file/chain-file.yml\"\n"
