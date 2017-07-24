@@ -2,17 +2,17 @@ options:
     class: 'Class name'
     events: 'Carrega eventos do container'
     module: 'O nome do módulo.'
-    extension: 'The extension name.'
-    extension-type: 'The extension type.'
+    extension: 'O nome da extensão.'
+    extension-type: 'O tipo da extensão.'
     services: 'Carrega serviços do container.'
     tags: 'Define tags de serviço do container.'
     inputs: 'Cria entradas de formulário.'
     permissions: 'Criar permissões.'
 questions:
-    class: 'Enter the Class name'
+    class: 'Digite o nome da classe (Class name)'
     module: 'Digite o nome do módulo'
-    extension: 'Enter the extension name'
-    extension-type: 'Enter the extension type'
+    extension: 'Digite o nome da extensão'
+    extension-type: 'Digite o tipo da extensão'
     confirm: 'Você confirma a criação'
     canceled: 'Criação de comando cancelada.'
     events:
@@ -25,7 +25,7 @@ questions:
     inputs:
         confirm: 'Você deseja de gerar uma estrutura de formulário?'
         label: 'Label do input'
-        machine-name: 'Input machine name'
+        machine-name: 'Nome de máquina do input'
         permission: 'Você quer gerar permissões?'
         type: Tipo
         invalid: 'Tipo de campo "%s" inválido.'
@@ -38,14 +38,14 @@ questions:
 errors:
     module-dependency: 'Dependência do módulo ausente "%s"'
     class-name-empty: 'O nome da classe não pode ser vazio'
-    invalid-file-path: 'You must provide a valid file path'
-    module-exist: 'Module "%s" already exist.'
-    machine-name-duplicated: 'Machine name "%s" is duplicated.'
+    invalid-file-path: 'Você deve fornecer um caminho de arquivo válido'
+    module-exist: 'Módulo "%s" já existe.'
+    machine-name-duplicated: 'Nome de máquina "%s" está duplicado.'
 status:
     enabled: Habilitado
     disabled: Desabilitado
 messages:
     canceled: 'Gerador cancelado'
     drupal-core: 'Drupal Core'
-    move-phar: 'Accessing console from anywhere on your system'
-    quick-start: 'Download, install and serve Drupal 8'
+    move-phar: 'Acessando console de qualquer lugar em seu sistema'
+    quick-start: 'Baixe, instale e sirva o Drupal 8'
