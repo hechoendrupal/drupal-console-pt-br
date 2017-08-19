@@ -1,22 +1,22 @@
-description: 'Remove Configuração'
+description: 'Remove configuração'
 arguments:
     type: 'Configuration type.'
     name: 'Nome de configuração.'
 messages:
-    all: 'All configuration sucessfully deleted.'
+    all: 'Toda a configuração foi excluída com sucesso.'
     deleted: 'Configuração "%s" removida com sucesso.'
     name: 'Nome de configuração deve conter um valor.'
     not-exists: 'A configuração "%s" não existe.'
 errors:
-    config-storage: 'Configuration type would not be loaded.'
-    name: 'Configuration name must contain a value.'
-    type: 'Configuration type is missing.'
-    not-exists: 'The configuration "%s" does not exists.'
+    config-storage: 'O tipo de configuração não pode ser carregado.'
+    name: 'O nome da configuração deve conter um valor.'
+    type: 'O tipo de configuração está faltando.'
+    not-exists: 'A configuração "%s" não existe.'
 warnings:
-    undo: 'This action will delete all configuration permanentaly.'
+    undo: 'Essa ação excluirá todas as configurações permanentemente.'
 questions:
-    sure: 'Are you sure to delete all configuration'
+    sure: 'Tem certeza de excluir todas as configurações.'
 examples:
     -
-        description: 'Provide a config type and a config name'
+        description: 'Forneça um tipo de configuração e um nome de configuração.'
         execution: 'drupal config:delete active all'
