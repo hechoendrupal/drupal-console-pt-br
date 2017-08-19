@@ -1,4 +1,4 @@
-description: 'Remove Configuração'
+description: 'Remove configuração'
 arguments:
     type: 'Configuration type.'
     name: 'Nome de configuração.'
