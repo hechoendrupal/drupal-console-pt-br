@@ -32,6 +32,8 @@ questions:
     twigtemplate: 'Do you want to generate a themeable template'
     controller: 'Você deseja criar um Controller padrão'
     structure: 'Você deseja criar a estrutura de diretório'
+suggestions:
+    my-awesome-module: 'My Awesome Module'
 warnings:
     module-unavailable: 'Aviso: Os seguintes módulos não estão disponíveis no seu ambiente local "%s"'
 errors:

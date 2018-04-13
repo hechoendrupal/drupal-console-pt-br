@@ -6,7 +6,7 @@ questions:
 messages:
     missing-file: 'Você deve fornecer um caminho e um nome de arquivo válidos.'
     invalid-file: 'O arquivo "%s" não existe.'
-    module_install: 'comando module:install não é executável dentro de uma sequência de comandos e deve ser executado de forma independente.
+    module_install: 'comando module:install não é executável dentro de uma sequência de comandos e deve ser executado de forma independente.'
     missing-environment-placeholders: 'Faltando environment placeholder(s) "%s"'
     set-environment-placeholders: 'Definir environment placeholders como:'
     missing-inline-placeholders: 'Faltando inline placeholder(s) "%s"'

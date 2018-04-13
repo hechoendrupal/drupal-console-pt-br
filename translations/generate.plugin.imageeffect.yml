@@ -13,6 +13,8 @@ questions:
     label: 'Digite a label do plugin'
     plugin-id: 'Digite o id do plugin'
     description: 'Digite a descrição do plugin'
+suggestions:
+    my-image-effect: 'My Image Effect'
 examples:
     -
         description: 'Generate a image effect plugin specifying the module name, the class, its label, the plugin id and a description'
