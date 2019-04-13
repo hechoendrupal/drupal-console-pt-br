@@ -1,4 +1,4 @@
-description: 'Importar a configuratição selecionada.'
+description: 'Importar a configuração selecionada.'
 options:
     file: 'The file(s) name or file(s) absolute path to import'
     directory: 'The path from where to import file(s).'
