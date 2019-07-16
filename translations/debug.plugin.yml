@@ -5,6 +5,8 @@ arguments:
     id: 'Plugin ID'
 errors:
     plugin-type-not-found: 'Tipo de plugin "%s" não encontrado. Sem serviços disponíveis desse tipo.'
+messages:
+    plugin-info: 'Plugin additional information'
 table-headers:
     plugin-type-name: 'Tipo de plugin'
     plugin-type-class: 'Classe gerenciadora de plugin'
@@ -12,6 +14,7 @@ table-headers:
     plugin-class: 'Classe do Plugin'
     definition-key: Chave
     definition-value: Valor
+    setting: Setting
 examples:
     -
         description: 'Displays a list with all the plugins on the current site'

@@ -6,16 +6,19 @@ questions:
 messages:
     missing-file: 'Você deve fornecer um caminho e um nome de arquivo válidos.'
     invalid-file: 'O arquivo "%s" não existe.'
-    module_install: 'comando module:install não é executável dentro de uma sequência de comandos e deve ser executado de forma independente.'
+    module-install: 'module:install command is not runnable inside a chain queue and must be run independently.'
     missing-environment-placeholders: 'Faltando environment placeholder(s) "%s"'
     set-environment-placeholders: 'Definir environment placeholders como:'
     missing-inline-placeholders: 'Faltando inline placeholder(s) "%s"'
     set-inline-placeholders: 'Coloque os inline placeholders como:'
     select-value-for-placeholder: 'Selecione um valor para %s placeholder'
     enter-value-for-placeholder: 'Digite o valor para %s placeholder'
+    legacy-inline: 'Update inline legacy placeholders from %{{name}} to {{name}}.'
+    legacy-environment: 'Update environment legacy placeholders from ${{(NAME}} or %env(NAME)% to {{env("NAME")}}.'
+    metadata-registration: "You should register your chain file as command by providing metadata, more info at:\n   https://docs.drupalconsole.com/en/chains/registering.html"
+    module_install: 'comando module:install não é executável dentro de uma sequência de comandos e deve ser executado de forma independente.'
     missing_file: 'Você deve fornecer um nome e caminho de arquivo válido.'
     invalid_file: 'O arquivo "%s" não existe.'
-    module_install: 'comando module:install não é executável dentro de uma sequência de comandos e deve ser executado de forma independente.'
 examples:
     -
         description: 'Fornecendo uma opção de arquivo usando o caminho completo.'

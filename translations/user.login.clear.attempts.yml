@@ -1,8 +1,9 @@
 description: 'Limpar tentativas falhas de login para um usuário.'
 help: 'O comando <info>user:login:clear:attempts</info> reseta as tentativas falhas de login para um usuário.'
-options:
-    user-id: 'ID do usuário.'
+arguments:
+    user: 'User name/id.'
 questions:
+    user: 'Enter User name/id'
     uid: 'Digite o ID do usuário.'
     numeric-uid: 'O ID do usuário deve ser inteiro.'
     invalid-uid: 'O ID do usuário deve ser maior que zero.'

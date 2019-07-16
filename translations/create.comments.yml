@@ -28,6 +28,7 @@ messages:
     created: 'Data de criação'
     invalid-content-types: 'Tipos de conteúdos "%s" são inválidos'
     created-comments: 'Criado "%s" comentários com sucesso'
+    error: 'Error creating comments: "%s"'
 examples:
     -
         description: 'Provide the node id where the comments will be generated.'

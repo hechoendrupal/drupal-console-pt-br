@@ -1,16 +1,22 @@
 description: 'Exportar uma view no formato YAML dentro de um módulo fornecido para reutilização em outro site.'
 messages:
-    view_exported: 'Exportando view'
+    view-exported: 'View exported sucessfully'
     depencies-included: 'As seguintes dependências de módulo foram incluídas em "%s"'
+    wrong-view: 'The view "%s" does not exist'
+    view_exported: 'Exportando view'
 questions:
     view: 'View para ser exportada'
     optional-config: 'Exportar view em um módulo como uma configuração opcional.'
     include-module-dependencies: 'Incluir as dependências do módulo para views em um arquivo YAML'
+    remove-uuid: 'The view to be exported without uuid key.'
+    remove-config-hash: 'The view to be exported without the default site hash key.'
 arguments:
     view-id: 'View ID'
 options:
     optional-config: 'Exportar view como uma configuração YAML opcional em seu módulo'
     include-module-dependencies: 'Inclua dependências do módulo em um arquivo YAML'
+    remove-uuid: 'If set, the configuration will be exported without uuid key.'
+    remove-config-hash: 'If set, the configuration will be exported without the default site hash key.'
 examples:
     -
         description: 'Provide a view id'
@@ -18,3 +24,6 @@ examples:
     -
         description: 'You can provide the interactive values like parameter.'
         execution: "drupal config:export:view viewid \\\n  --module=\"modulename\" \\\n  --optional-config \\\n  --include-module-dependencies\n"
+    -
+        description: 'Export as config for the provided module, updating the module''s info.yml with any module dependencies from the view.'
+        execution: "drupal config:export:view viewid \\\n  --module=\"modulename\" \\\n  --optional-config \\\n  --include-module-dependencies"

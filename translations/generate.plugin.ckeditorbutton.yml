@@ -6,6 +6,8 @@ options:
     class: 'Nome da classe do Plugin'
     label: 'Plugin label'
     plugin-id: 'Plugin ID. Observação: Corresponde ao name do Plugin CKEditor. É o primeiro argumento da função CKEDITOR.plugins.add() no arquivo plugin.js.'
+    buttons: 'CKEditor buttons.'
+    button-properties: 'Enter a new button properties.'
     button-name: 'Nome do botão. Observação: Corresponde ao nome do botão do Plugin CKEditor. É o primeiro argumento da função editor.ui.addButton() ou editor.ui.addRichCombo() no arquivo plugin.js.'
     button-icon-path: 'Path do Ícone do Botão. É o caminho do ícone/imagem do botão.'
 questions:
@@ -15,6 +17,8 @@ questions:
     plugin-id: 'Digite o Plugin ID. Observação: Isso corresponde ao nome do CKEditor Plugin. É o primeiro argumento da função CKEDITOR.plugins.add() no arquivo plugin.js.'
     button-name: 'Digite o nome do botão. Observação: Isso corresponde ao nome do botão. O primeiro argumento da função editor.ui.addButton() ou editor.ui.addRichCombo() no arquivo plugin.js.'
     button-icon-path: 'Digite o caminho do ícone do botão'
+    button-label: 'Enter the button label'
+    button-add: 'Do you want to add another button?'
 examples:
     -
         description: 'Generate CKEditor button specifying the module name, the class, the label, its id, the button name and the icon path'

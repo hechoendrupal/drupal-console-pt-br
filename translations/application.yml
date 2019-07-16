@@ -1,13 +1,13 @@
 options:
     env: 'Nome do ambiente.'
-    no-debug: 'Desligar o modo de depuração.'
+    debug: 'Switches on debug mode'
     learning: 'Gerar código com explicações.'
     generate-chain: 'Imprimir opções e argumentos como YAML para ser usado o comando chain'
     generate-inline: 'Imprimir opções e argumentos de execução como chamada inline para ser usado no futuro'
     generate-doc: 'Mostra opções de comando e argumentos como markdown'
     root: 'Define a raíz do Drupal que utilizará os comandos em execução.'
     uri: 'URI do site Drupal para usar (para ambientes multisites ou quando usado em uma porta alternativa)'
-    yes: 'Pular confirmação e prosseguir'
+    'yes': 'Pular confirmação e prosseguir'
     target: 'Nome do site com o qual deseja interagir (para sites locais ou remotos)'
     help: 'Exibir essa mensagem de ajuda'
     quiet: 'Não mostrar nenhuma mensagem de saída'
@@ -17,6 +17,7 @@ options:
     no-ansi: 'Desabilitar saída ANSI'
     no-interaction: 'Não faça nenhuma pergunta interativa'
     check-fix: 'Tentar corrigir qualquer configuração faltante.'
+    no-debug: 'Desligar o modo de depuração.'
 arguments:
     command: 'O comando a ser executado'
 messages:
@@ -29,6 +30,8 @@ messages:
     files:
         generated: 'Gerar ou atualizar arquivos'
         copied: 'Copiar arquivos'
+    lines-code: 'Generated lines: %s'
+    path: 'Generation path'
     learning:
         route: "Com a finalidade de criar páginas é necessário criar rotas para elas.\nUma rota relaciona uma URL a um controlador. Isso define qual função\nou método será chamado quando uma URL é acessada.\nSe o usuário acessar http://drupal8.dev/{{ route }}, o sistema buscará uma rota para esse caminho. Neste caso, se encontrar uma rota\n, e executará a chamada controller. Neste caso a chamada é \ndefinida como um nome de classe\n(\"\\Drupal\\{{ module }}\\Controller\\{{ class_name }}\")\ne um método (\"{{ method_name }}\")."
     autocomplete: "Bash or Zsh: Adiciona está linha para arquivo de configuração do shell:\n<info>source \"$HOME/.console/console.rc\" 2>/dev/null</info>\n\nFish: Criar um link simbólico\n<info>ln -s ~/.console/drupal.fish ~/.config/fish/completions/drupal.fish</info>\n"
@@ -40,6 +43,9 @@ messages:
 errors:
     invalid-command: 'Comando "%s" não está definido.'
     renamed-command: 'Command "%s" was renamed, use "%s" instead.'
+    drush-command: 'Command "%s" is a Drush command (deprecated). Drupal Console equivalent "%s" was executed instead.'
+    statistics-failed: "The Drupal console failed to send statistics. After 10 attempts, this feature was disabled.\nIf you want to enable it again, use the following command:\n\n<info>drupal settings:set statistics.enabled true</info>\n"
+    statistics-url-failed: "The Drupal console failed to send statistics.\nYou must configure it in the global config.yml, use the following command and choose your preference:\n\n<info>drupal init</info>"
 site:
     messages:
         path: 'Endereço do site'
@@ -71,7 +77,7 @@ gitbook:
         command_description: 'O **"%s"** comando "%s"'
         usage: Utilização
         options: 'Opções disponíveis'
-        option: Opção 
+        option: Opção
         details: Detalhes
         arguments: 'Argumentos disponíveis'
         argument: Argumento

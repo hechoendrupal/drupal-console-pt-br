@@ -2,19 +2,21 @@ description: 'Remover usuários da aplicação'
 help: 'O comando <info>user:delete</info> possibilita a remoção de usuários.'
 welcome: 'Bem vindo ao processo de remoção de usuários do Drupal'
 options:
-    user-id: 'ID do usuário a ser deletado'
+    user: 'User name/id to be deleted'
     roles: 'Papéis associados ao usuários que serão deletados'
+    user-id: 'ID do usuário a ser deletado'
 questions:
-    user-id: 'ID do usuário a ser deletado (deixe vazio para continuar)'
+    user: 'User name/id to be deleted (empty to skip)'
     roles: 'Selecione os papéis dos usuários a serem deletados'
+    user-id: 'ID do usuário a ser deletado (deixe vazio para continuar)'
 messages:
     user-id: 'ID do usuário'
     username: 'Nome de usuário'
     user-deleted: 'O usuário "%s" foi deletado com sucesso'
     users-deleted: 'Os usuários "%s" foram deletados com sucesso'
 errors:
-    invalid-user-id: 'ID do usuário "%s" não foi encontrado'
     invalid-user: 'ID do usuário "%s" não foi encontrado'
+    invalid-user-id: 'ID do usuário "%s" não foi encontrado'
 examples:
     -
         description: 'Delete user specifying the id and the user role'
@@ -22,3 +24,6 @@ examples:
     -
         description: 'Delete user specifying its id'
         execution: "drupal user:delete  \\\n  --user-id=\"3\"\n"
+    -
+        description: 'Delete users with the role "authenticated"'
+        execution: "drupal user:delete  \\\n  --role=\"authenticated\"\n"

@@ -1,5 +1,6 @@
 description: 'Gerar uma nova entidade de configuração'
 help: ''
+welcome: 'Welcome to the Drupal Config Entity generator'
 options:
     module: common.options.module
     entity-class: 'Classe da entidade de configuração'
