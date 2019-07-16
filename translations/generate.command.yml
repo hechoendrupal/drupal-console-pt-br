@@ -2,18 +2,29 @@ description: 'Cria comandos via console.'
 help: 'O comando <info>generate:command</info> te ajuda a criar um novo comando.'
 welcome: 'Bem-vindo ao Criador de comandos do Drupal.'
 options:
-    module: common.options.module
-    controller-title: 'Título do Controller'
+    extension: 'The name of the Extension (modules, profiles or themes name that will contain the command).'
+    extension-type: 'The type of the Extension (can be module, profile or theme).'
     class: 'Nome da classe do comando'
     name: 'Nome do comando.'
+    interact: 'Add interact method.'
+    initialize: 'Add initialize method.'
     container-aware: 'Conhece o comando ciente da instalação do site Drupal quando executado'
+    services: 'Load services from the container.'
+    generator: 'Add a Generator class for this command.'
+    module: common.options.module
+    controller-title: 'Título do Controller'
     command: 'Nome do comando'
     container: 'Acessa o container de serviços'
 questions:
-    module: common.questions.module
+    extension: 'Enter the extension name'
     class: 'Digite o nome da classe do comando.'
     name: 'Digite o nome do comando.'
+    interact: 'Do you want to add the interact method?'
+    initialize: 'Do you want to add the initialize method?'
     container-aware: 'Conhece o comando ciente da instalação do site Drupal quando executado?.'
+    services: 'Enter your service'
+    generator: 'Do you want to add a Generator class?.'
+    module: common.questions.module
     command: 'Digite o nome do comando.'
     container: 'Você precisa de acesso o container de serviços?'
     controller-title: 'Título do Controller'

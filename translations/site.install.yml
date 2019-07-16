@@ -2,6 +2,7 @@ description: 'Instalar um projeto Drupal'
 arguments:
     profile: 'Perfil de instalação a ser instalado'
     langcode: Idioma
+    db-url: 'Use Database url to the installation instead of using the options. (Sqlite is not supported)'
     db-type: 'Tipo de banco de dados'
     db-file: 'Arquivo de configurações do banco de dados'
     site-name: 'Nome do site'
@@ -9,6 +10,7 @@ arguments:
     account-name: 'Nome de usuário do administrador'
     account-mail: 'Email do administrador'
     account-pass: 'Senha do administrador'
+    force: 'Force to reinstall the site'
 questions:
     profile: 'Selecione o perfil de instalação a ser instalado'
     langcode: 'Selecione o idioma para o site'
@@ -25,10 +27,16 @@ messages:
     installed: 'A instalação do Drupal 8 foi finalizada com sucesso'
     using-current-database: 'Usando o banco de dados "%s" com o nome da base "%s" e usuário "%s"'
     already-installed: 'O Drupal já está instalado, tente limpar o banco de dados atual e execute o comando site:install novamente'
+    connection-failed: 'Connection to the database failed, please check your settings file that has the correct username, password, database, host, port configured.'
     sites-backup: 'The sites.php file has temporarily been renamed to backup.sites.php while Drupal installs.'
     sites-restore: 'The backup of sites.php has been been restored to sites.php.'
     invalid-multisite: 'Invalid multisite, please create multisite using command drupal multisite:new %s "%s"'
+    invalid-db-url: 'Invalid database url, please provide a valid url like "mysql://dbUser:dbPass@dbHost/dbName"'
+    invalid-url-driver: 'Invalid database type, the Sqlite driver is not supported'
 examples:
     -
         description: 'Install a drupal project specifying installation type, language code, database configuration, site name, site email and admin credential settings'
         execution: "drupal site:install  standard  \\\n  --langcode=\"en\"  \\\n  --db-type=\"mysql\"  \\\n  --db-host=\"127.0.0.1\"  \\\n  --db-name=\"drupal8\"  \\\n  --db-user=\"u53rn4m3\"  \\\n  --db-pass=\"dbp455\"  \\\n  --db-port=\"3306\"  \\\n  --site-name=\"Drupal 8\"  \\\n  --site-mail=\"admin@example.com\"  \\\n  --account-name=\"admin\"  \\\n  --account-mail=\"admin@example.com\"  \\\n  --account-pass=\"p455w0rd\"\n"
+    -
+        description: 'Install a drupal project using a mysql url'
+        execution: "drupal site:install  standard  mysql://dbUser:dbPass@dbHost/dbName \\\n  --langcode=\"en\"  \\\n  --site-name=\"Drupal 8\"  \\\n  --site-mail=\"admin@example.com\"  \\\n  --account-name=\"admin\"  \\\n  --account-mail=\"admin@example.com\"  \\\n  --account-pass=\"p455w0rd\"\n"

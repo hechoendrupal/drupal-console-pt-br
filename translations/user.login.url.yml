@@ -1,11 +1,17 @@
 description: 'Cria uma URL de login de uso único.'
 options:
+    user: 'User name/id.'
     user-id: 'ID do usuário.'
 messages:
     url: 'URL de login para "%s": "%s"'
+questions:
+    user: 'Enter User name/id'
 errors:
     invalid-user: 'Não foi possível carregar o usuário (ID do usuário: "%s").'
 examples:
     -
         description: 'Get one time login url for user id 1'
         execution: "drupal user:login:url  1\n"
+    -
+        description: 'Get one time login url for username jmolivas'
+        execution: 'drupal user:login:url jmolivas'

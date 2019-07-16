@@ -4,10 +4,12 @@ messages:
     site: Site
     host: Host
     root: 'Diretório raíz'
-    not-sites: 'No sites defined'
+    invalid-sites: 'No sites defined.'
+    invalid-sites-using: "Using a site alias requires local configuration, more info at:\n   https://docs.drupalconsole.com/en/alias/using-site-alias.html\n"
     invalid-site: 'Invalid site name'
     private-key: 'Erro com a chave privada'
     connect-error: 'Erro ao conectar o servidor remoto'
+    not-sites: 'No sites defined'
     directory-not-found: 'Diretório do site local não encontrado'
 options:
     target: Target

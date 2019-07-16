@@ -22,6 +22,9 @@ questions:
         confirm: 'Você deseja carregar serviços do container?'
         message: "\nDigite o nome do serviço ou use as setas para cima e para baixo\nIsto é opcional, pressione <info>enter</info> para <info>continuar</info>\n"
         name: 'Digite seu serviço'
+    roles:
+        message: "\nType the role name or use keyup or keydown.\nThis is optional, press <info>enter</info> to <info>continue</info>\n"
+        name: 'Enter your role'
     inputs:
         confirm: 'Você deseja de gerar uma estrutura de formulário?'
         label: 'Label do input'
@@ -34,6 +37,7 @@ questions:
         weight: 'Peso para o elemento input'
         title: Título
         fieldset: Fieldset
+        new-field: 'Enter a new field properties'
         machine_name: 'Nome de máquina do input'
 errors:
     module-dependency: 'Dependência do módulo ausente "%s"'
@@ -49,3 +53,4 @@ messages:
     drupal-core: 'Drupal Core'
     move-phar: 'Acessando console de qualquer lugar em seu sistema'
     quick-start: 'Baixe, instale e sirva o Drupal 8'
+    available-field-types: 'Available types: <comment>%s</comment>'

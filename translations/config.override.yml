@@ -8,12 +8,16 @@ arguments:
     key: Chave
     value: Valor
     config-name: 'Nome da configuração.'
+options:
+    key: Key
+    value: Value
 messages:
     configuration: 'Nome da configuração'
     configuration-key: 'Chave da configuração'
     original: 'Valor original'
     updated: 'Valor sobrescrito'
     invalid-name: 'Config object "%s", does not exists'
+    invalid-config-file: 'Config file does not exist.'
 examples:
     -
         description: 'Définir la valeur de "flood" du module Contact à 10.'

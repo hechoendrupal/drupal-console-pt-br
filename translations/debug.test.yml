@@ -10,12 +10,12 @@ messages:
     description: Descrição
     group: Grupo
     type: 'Tipo do teste'
-    success: 'O console foi atualizado para a última versão disponível.'
     missing-dependency: 'Dependência não encontrada'
     methods: 'Métodos do teste'
     not-found: 'Debug não foi encontrado, certifique-se de definir o ID do teste entre aspas duplas.'
     success-groups: 'Todos os grupos de teste foram enumerados com sucesso, usar o argumento do grupo para filtrar unidade de teste por grupo de teste ou seja $ drupal test:debug Url'
     success-group: 'Todas as unidades de teste para o grupo % foram listadas com sucesso'
+    success: 'O console foi atualizado para a última versão disponível.'
     id: 'ID do teste unitário'
 examples:
     -
